@@ -413,6 +413,13 @@ docker-compose up -d
 - La sincronización MongoDB es asíncrona y no bloquea las respuestas
 - Los DTOs son inmutables (PartialType para updates)
 
+## Actualizacion de docker
+- docker-compose down
+- docker volume rm entrega-final-bd_mongo-data
+- docker volume rm entrega-final-bd_mysql-data
+- docker-compose up -d --build
+
+
 ## 👨‍💻 Autor
 
 Generado con NestJS CLI y configurado manualmente para máxima flexibilidad.
